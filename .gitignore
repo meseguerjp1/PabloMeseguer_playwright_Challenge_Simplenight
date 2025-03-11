@@ -22,10 +22,6 @@ rad.json
 TestResults.xml
 # Node modules
 node_modules/
-
-# Package lock file
-package-lock.json
-
 # Playwright reports and cache
 test-results/
 playwright-report/
