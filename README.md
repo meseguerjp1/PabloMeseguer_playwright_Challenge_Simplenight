@@ -8,7 +8,7 @@ This project is integrated with **Allure** for rich test reports and **GitHub Ac
 
 ## Repository
 
-GitHub Repository: [simplenight-POC-PabloMeseguer](https://github.com/meseguerjp1/PabloMeseguer_playwright_Challenge_Simplenight/tree/main)
+GitHub Repository: [simplenight-POC-PabloMeseguer](https://github.com/meseguerjp1/PabloMeseguer_playwright_Challenge_Simplenight)
 
 ## Installation
 
@@ -16,8 +16,8 @@ To set up the project, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/meseguerjp1/simplenight-POC-PabloMeseguer.git
-   cd simplenight-POC-PabloMeseguer
+   git clone https://github.com/meseguerjp1/PabloMeseguer_playwright_Challenge_Simplenight.git
+   cd PabloMeseguer_playwright_Challenge_Simplenight
    ```
 2. Install dependencies:
    ```sh
@@ -132,8 +132,7 @@ When tests are executed in a CI/CD pipeline, reports are automatically uploaded 
 
 1. Navigating to the **GitHub Actions** tab.
 2. Selecting the executed workflow.
-3. Going to the **Artifacts** section.
-4. Downloading the **Playwright-Allure-Report**.
+3. Go to: https://github.com/meseguerjp1/PabloMeseguer_playwright_Challenge_Simplenight/actions/runs/13779994593
 
 
 
