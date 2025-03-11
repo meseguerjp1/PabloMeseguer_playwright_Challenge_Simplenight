@@ -5,10 +5,14 @@ export default defineConfig({
   testDir: './tests',
   fullyParallel: false,
   retries: 0,
-  reporter: [['list'], ['allure-playwright']],
+  reporter: [
+    ['list'],
+    ['allure-playwright']
+  ],
   use: {
     trace: 'on',
     screenshot: 'only-on-failure',
+    outputDir: 'test-results/'
   },
   projects: [
     {
@@ -18,7 +22,7 @@ export default defineConfig({
         browserName: 'chromium',
         channel: 'chrome',
         viewport: { width: 1920, height: 1080 },
-        baseURL: 'https://wl.dev.simplenight.com/',
+        baseURL: 'https://wl.dev.simplenight.com/'
       },
     },
   ],
