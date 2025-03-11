@@ -1,0 +1,33 @@
+{
+  "name": "simplenight-poc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:report": "npx playwright test && npx allure generate allure-results --clean && npx allure open",
+    "test:headless": "npx playwright test --headless",
+    "test:headed": "npx playwright test --headed",
+    "runTestDevEnvironment:headless": "npx playwright test --headless --config=playwright.wl.config.ts",
+    "runTestDevEnvironment:headed": "npx playwright test --headed --config=playwright.wl.config.ts",
+    "runTestProduction:headless": "npx playwright test --headless --config=playwright.config.ts",
+    "runTestProduction:headed": "npx playwright test --headed --config=playwright.config.ts"
+  },
+  "keywords": [
+    "automation",
+    "playwright",
+    "automation",
+    "testing",
+    "simplenight"
+  ],
+  "author": "Pablo Meseguer",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.13.8",
+    "allure-commandline": "^2.33.0",
+    "allure-playwright": "^3.2.0",
+    "playwright": "^1.50.1",
+    "typescript": "^5.7.3"
+  }
+}
