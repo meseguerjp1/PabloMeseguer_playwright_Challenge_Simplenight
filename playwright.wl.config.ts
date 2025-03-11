@@ -5,14 +5,14 @@ export default defineConfig({
   testDir: './tests',
   fullyParallel: false,
   retries: 0,
+  outputDir: 'test-results/',
   reporter: [
     ['list'],
     ['allure-playwright']
   ],
   use: {
     trace: 'on',
-    screenshot: 'only-on-failure',
-    outputDir: 'test-results/'
+    screenshot: 'only-on-failure'
   },
   projects: [
     {
