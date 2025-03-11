@@ -11,6 +11,10 @@ export class HotelSearchPage {
     }
 
     async changeViewToMap() {
+         //This wait is because after some time the real ranges of the slider are displayed
+        await this.page.waitForTimeout(2000);
+        await this.page.waitForLoadState('load');
+        await this.page.waitForSelector('body', { state: 'visible' });
         await this.page.waitForSelector(this.hotelSearchLocators.selectPropertyTypeButton, { state: 'visible' });
         await this.page.click(this.hotelSearchLocators.selectPropertyTypeButton);
         await this.page.waitForSelector(this.hotelSearchLocators.propertyTypeMapOption, { state: 'visible' });

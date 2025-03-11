@@ -7,9 +7,9 @@
     "test:report": "npx playwright test && npx allure generate allure-results --clean && npx allure open",
     "test:headless": "npx playwright test --headless",
     "test:headed": "npx playwright test --headed",
-    "runTestDevEnvironment:headless": "npx playwright test --headless --config=playwright.wl.config.ts",
+    "runTestDevEnvironment:headless": "HEADLESS=true npx playwright test --config=playwright.wl.config.ts",
     "runTestDevEnvironment:headed": "npx playwright test --headed --config=playwright.wl.config.ts",
-    "runTestProduction:headless": "npx playwright test --headless --config=playwright.config.ts",
+    "runTestProduction:headless": "HEADLESS=true npx playwright test --config=playwright.config.ts",
     "runTestProduction:headed": "npx playwright test --headed --config=playwright.config.ts"
   },
   "keywords": [
