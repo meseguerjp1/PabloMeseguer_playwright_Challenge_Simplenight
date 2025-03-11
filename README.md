@@ -1,4 +1,4 @@
-# simplenight-POC-PabloMeseguer
+# PabloMeseguer_playwright_Challenge_Simplenight
 
 ## Overview
 
