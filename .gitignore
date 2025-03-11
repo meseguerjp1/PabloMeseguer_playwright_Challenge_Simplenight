@@ -20,3 +20,21 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+# Node modules
+node_modules/
+
+# Package lock file
+package-lock.json
+
+# Playwright reports and cache
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Allure reports
+allure-results/
+allure-report/
+
+# macOS system files
+.DS_Store
